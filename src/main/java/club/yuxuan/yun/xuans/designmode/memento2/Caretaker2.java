@@ -1,6 +1,5 @@
 package club.yuxuan.yun.xuans.designmode.memento2;
 
-import club.yuxuan.yun.xuans.designmode.memento.Memento;
 import lombok.Data;
 
 /**
