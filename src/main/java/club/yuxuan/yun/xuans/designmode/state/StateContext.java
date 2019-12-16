@@ -3,11 +3,11 @@ package club.yuxuan.yun.xuans.designmode.state;
 import lombok.Data;
 
 @Data
-public class Context {
+public class StateContext {
     
     private State state;
 
-    public Context(State state) {
+    public StateContext(State state) {
         this.state = state;
     }
 

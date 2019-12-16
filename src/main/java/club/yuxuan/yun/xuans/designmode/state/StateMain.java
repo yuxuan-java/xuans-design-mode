@@ -20,7 +20,7 @@ package club.yuxuan.yun.xuans.designmode.state;
 public class StateMain {
 
     public static void main(String[] args) {
-        Context c = new Context(new ConcreteStateA());
+        StateContext c = new StateContext(new ConcreteStateA());
         c.request();
         c.request();
         c.request();
