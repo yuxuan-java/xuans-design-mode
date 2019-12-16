@@ -11,9 +11,17 @@ class GoodNotifier extends Notifier {
     }
 
     @Override
-    public void notifyX() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+    public void notifyX() {
         System.out.println("GoodNotifier-notifyX execute.");
-        this.getDelegateEventHandler().notifyX();
+        try {
+            this.getDelegateEventHandler().notifyX();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
     }
     
 }
