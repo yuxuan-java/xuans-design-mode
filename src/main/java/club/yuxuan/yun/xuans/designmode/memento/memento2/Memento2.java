@@ -1,4 +1,4 @@
-package club.yuxuan.yun.xuans.designmode.memento2;
+package club.yuxuan.yun.xuans.designmode.memento.memento2;
 
 /**
  * 备忘录
