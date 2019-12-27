@@ -3,6 +3,13 @@ package club.yuxuan.yun.xuans.designmode.flyweight;
 /**
  * 享元模式
  *      运用共享技术有效地支持大量细粒度的对象。
+ * 
+ * Java里的享元模式
+ *      String a = "abc";
+ *      String b = "abc";
+ *      System.out.println(a == b);
+ *      System.out.println(a.equals(b));
+ *      字符串a与字符串b对象使用的是同一个内存地址
  *      
  * 内部状态与外部状态
  *      享元模式可以避免大量非常相似类的开销。
