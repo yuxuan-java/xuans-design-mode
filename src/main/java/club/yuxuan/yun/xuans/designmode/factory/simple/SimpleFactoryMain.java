@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 /**
  * 简单工厂模式
+ *      让业务逻辑与客户端逻辑分开，让它们之间耦合度下降。
  *      简单工厂模式并不符合开放-封闭原则
  *
  * @author yuxuan.han
