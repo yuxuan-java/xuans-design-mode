@@ -8,8 +8,6 @@ public class XuansDesignModeApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(XuansDesignModeApplication.class, args);
-        
-        System.out.println("------done------");
     }
 
 }
