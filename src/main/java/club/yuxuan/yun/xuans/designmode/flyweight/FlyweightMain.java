@@ -7,8 +7,8 @@ package club.yuxuan.yun.xuans.designmode.flyweight;
  * Java里的享元模式
  *      String a = "abc";
  *      String b = "abc";
- *      System.out.println(a == b);
- *      System.out.println(a.equals(b));
+ *      System.out.println(a == b); // true
+ *      System.out.println(a.equals(b)); //true
  *      字符串a与字符串b对象使用的是同一个内存地址
  *      
  * 内部状态与外部状态
