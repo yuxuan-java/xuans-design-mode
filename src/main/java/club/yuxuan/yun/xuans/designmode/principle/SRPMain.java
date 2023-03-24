@@ -1,7 +1,7 @@
 package club.yuxuan.yun.xuans.designmode.principle;
 
 /**
- * 单一职责原则
+ * 单一职责原则（Single Responsibility Principle）
  *      就一个类而言，应该仅有一个引起它变化的原因。
  *      
  *      如果一个类承担的职责过多，就等于把这些职责耦合在一起，一个职责的变化可能会削弱或者抑制这个类完成其它职责的能力。
