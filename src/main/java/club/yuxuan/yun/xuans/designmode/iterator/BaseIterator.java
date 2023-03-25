@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.iterator;
  * @author yuxuan.han
  * @date 2019/12/24 21:48
  **/
-public abstract class Iterator<T> {
+public abstract class BaseIterator<T> {
     
     public abstract T first();
     public abstract T next();

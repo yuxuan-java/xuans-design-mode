@@ -1,6 +1,5 @@
 package club.yuxuan.yun.xuans.designmode.composite;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,21 +9,21 @@ import java.util.List;
  * @author yuxuan.han
  * @date 2019/12/23 22:26
  **/
-public class Composite extends Component {
+public class Composite extends BaseComponent {
     
-    private List<Component> children = new LinkedList<>();
+    private List<BaseComponent> children = new LinkedList<>();
     
     public Composite(String name) {
         super(name);
     }
 
     @Override
-    public void add(Component component) {
+    public void add(BaseComponent component) {
         children.add(component);
     }
 
     @Override
-    public void remove(Component component) {
+    public void remove(BaseComponent component) {
         children.remove(component);
     }
 
@@ -35,7 +34,7 @@ public class Composite extends Component {
         }
         System.out.println(name);
         
-        for (Component component : children) {
+        for (BaseComponent component : children) {
             component.display(depth + 2);
         }
     }

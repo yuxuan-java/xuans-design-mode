@@ -5,18 +5,18 @@ import java.util.List;
 
 public class ObjectStructure {
     
-    private List<Element> elementList = new ArrayList<>();
+    private List<BaseElement> elementList = new ArrayList<>();
     
-    public void attach(Element element) {
+    public void attach(BaseElement element) {
         elementList.add(element);
     }
     
-    public void detach(Element element) {
+    public void detach(BaseElement element) {
         elementList.remove(element);
     }
     
-    public void accept(Visitor visitor) {
-        for (Element element : elementList) {
+    public void accept(BaseVisitor visitor) {
+        for (BaseElement element : elementList) {
             element.accept(visitor);
         }
     }

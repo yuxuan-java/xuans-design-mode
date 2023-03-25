@@ -5,13 +5,13 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode
-public abstract class Person {
+public abstract class BasePerson {
     
     protected String action;
 
     /**
      * 得到结论或作出反应
      */
-    public abstract void accept(Action visitor);
+    public abstract void accept(BaseAction visitor);
     
 }

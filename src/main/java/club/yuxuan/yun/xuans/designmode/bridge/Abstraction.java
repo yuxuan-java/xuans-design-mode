@@ -2,9 +2,9 @@ package club.yuxuan.yun.xuans.designmode.bridge;
 
 public class Abstraction {
     
-    protected Implementor implementor;
+    protected BaseImplementor implementor;
 
-    public void setImplementor(Implementor implementor) {
+    public void setImplementor(BaseImplementor implementor) {
         this.implementor = implementor;
     }
 

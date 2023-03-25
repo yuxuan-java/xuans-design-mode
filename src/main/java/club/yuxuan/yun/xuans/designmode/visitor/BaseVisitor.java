@@ -1,6 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.visitor;
 
-public abstract class Visitor {
+public abstract class BaseVisitor {
     
     public abstract void visitConcreteElementA(ConcreteElementA concreteElementA);
     

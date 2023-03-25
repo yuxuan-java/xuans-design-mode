@@ -7,7 +7,7 @@ package club.yuxuan.yun.xuans.designmode.strategy;
  * @author yuxuan.han
  * @date 2019/12/16 22:43
  **/
-public class ConcreteStrategyA extends Strategy {
+public class ConcreteStrategyA extends BaseStrategy {
     
     @Override
     public void algorithmInterface() {

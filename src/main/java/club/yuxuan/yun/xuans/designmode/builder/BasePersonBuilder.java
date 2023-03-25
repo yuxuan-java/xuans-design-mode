@@ -1,14 +1,12 @@
 package club.yuxuan.yun.xuans.designmode.builder;
 
-import java.awt.*;
-
 /**
  * 人类建造者
  *
  * @author yuxuan.han
  * @date 2019/12/17 00:39
  **/
-public abstract class PersonBuilder {
+public abstract class BasePersonBuilder {
 
     /**
      * 构建头

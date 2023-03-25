@@ -9,9 +9,9 @@ package club.yuxuan.yun.xuans.designmode.builder;
  **/
 public class PersonDirector {
     
-    private PersonBuilder personBuilder;
+    private BasePersonBuilder personBuilder;
 
-    public PersonDirector(PersonBuilder personBuilder) {
+    public PersonDirector(BasePersonBuilder personBuilder) {
         this.personBuilder = personBuilder;
     }
     

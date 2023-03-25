@@ -24,7 +24,7 @@ public class IteratorMain {
         aggregate.add("公交内部员工");
         aggregate.add("小偷");
         
-        Iterator<String> iterator = new ConcreteIterator(aggregate);
+        BaseIterator<String> iterator = new ConcreteIterator(aggregate);
         String first = iterator.first();
         System.out.println(first);
         

@@ -1,6 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.iterator;
 
-public class ConcreteIterator<T> extends Iterator<T> {
+public class ConcreteIterator<T> extends BaseIterator<T> {
     
     private ConcreteAggregate<T> aggregate;
     private int current = 0;

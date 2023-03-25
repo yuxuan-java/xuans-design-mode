@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.proxy;
  * @author yuxuan.han
  * @date 2019/12/16 23:23
  **/
-public abstract class Subject {
+public abstract class BaseSubject {
     
     public abstract void request();
     

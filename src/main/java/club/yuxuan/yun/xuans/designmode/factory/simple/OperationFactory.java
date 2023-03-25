@@ -16,8 +16,8 @@ public class OperationFactory {
      * @param operate
      * @return club.yuxuan.yun.xuans.designmode.factory.simple.Operation
      */
-    public static Operation createOperate(String operate) {
-        Operation operation = null;
+    public static BaseOperation createOperate(String operate) {
+        BaseOperation operation = null;
         switch (operate) {
             case "+":
                 operation = new OperationAdd();
@@ -30,6 +30,8 @@ public class OperationFactory {
                 break;
             case "/":
                 operation = new OperationDiv();
+                break;
+            default:
                 break;
         }
         return operation;

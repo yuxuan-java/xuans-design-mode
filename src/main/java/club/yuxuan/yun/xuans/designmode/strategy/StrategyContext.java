@@ -8,13 +8,13 @@ package club.yuxuan.yun.xuans.designmode.strategy;
  **/
 public class StrategyContext {
 
-    Strategy strategy;
+    BaseStrategy strategy;
 
     /**
      * 初始化时传入具体的策略对象
      * @param strategy
      */
-    public StrategyContext(Strategy strategy) {
+    public StrategyContext(BaseStrategy strategy) {
         this.strategy = strategy;
     }
 

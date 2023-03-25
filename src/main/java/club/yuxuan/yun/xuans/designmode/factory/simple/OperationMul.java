@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  * @author yuxuan.han
  * @date 2019/12/16 22:28
  **/
-public class OperationMul extends Operation {
+public class OperationMul extends BaseOperation {
     
     @Override
     public BigDecimal getResult() {

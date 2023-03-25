@@ -1,8 +1,8 @@
 package club.yuxuan.yun.xuans.designmode.decorator;
 
-public abstract class Decorator extends Component {
+public abstract class BaseDecorator extends BaseComponent {
     
-    protected Component component;
+    protected BaseComponent component;
     
     @Override
     public void operation() {
@@ -11,7 +11,7 @@ public abstract class Decorator extends Component {
         }
     }
 
-    public void setComponent(Component component) {
+    public void setComponent(BaseComponent component) {
         this.component = component;
     }
 }

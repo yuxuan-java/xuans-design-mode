@@ -18,7 +18,7 @@ package club.yuxuan.yun.xuans.designmode.proxy;
 public class ProxyMain {
 
     public static void main(String[] args) {
-        Subject proxy = new Proxy();
+        BaseSubject proxy = new Proxy();
         proxy.request();
 
         System.out.println("------done------");

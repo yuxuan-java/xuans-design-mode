@@ -1,6 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.command;
 
-public class ConcreteCommand extends Command {
+public class ConcreteCommand extends BaseCommand {
 
     public ConcreteCommand(Receiver receiver) {
         super(receiver);

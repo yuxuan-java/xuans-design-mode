@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.decorator;
  * @author yuxuan.han
  * @date 2019/12/8 20:30
  **/
-public class ConcreteDecoratorA extends Decorator {
+public class ConcreteDecoratorA extends BaseDecorator {
     
     private String addedState;
 

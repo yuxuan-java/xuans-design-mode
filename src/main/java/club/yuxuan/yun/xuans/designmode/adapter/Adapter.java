@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.adapter;
  * @author yuxuan.han
  * @date 2020/11/25 上午11:01
  **/
-public class Adapter extends Target {
+public class Adapter extends BaseTarget {
     
     private Adaptee adaptee = new Adaptee();
     

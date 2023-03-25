@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.decorator;
  * @author yuxuan.han
  * @date 2019/12/8 20:30
  **/
-public class ConcreteDecoratorB extends Decorator {
+public class ConcreteDecoratorB extends BaseDecorator {
 
     @Override
     public void operation() {

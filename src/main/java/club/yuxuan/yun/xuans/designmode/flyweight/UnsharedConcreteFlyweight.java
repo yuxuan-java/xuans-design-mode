@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.flyweight;
  * @author yuxuan.han
  * @date 2019/12/27 22:50
  **/
-public class UnsharedConcreteFlyweight extends Flyweight {
+public class UnsharedConcreteFlyweight extends BaseFlyweight {
 
     @Override
     public void operation(String extrinsicState) {

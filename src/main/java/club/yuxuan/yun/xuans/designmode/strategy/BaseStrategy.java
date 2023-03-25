@@ -7,7 +7,7 @@ package club.yuxuan.yun.xuans.designmode.strategy;
  * @author yuxuan.han
  * @date 2019/12/16 22:42
  **/
-public abstract class Strategy {
+public abstract class BaseStrategy {
 
     /**
      * 算法方法

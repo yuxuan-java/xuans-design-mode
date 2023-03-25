@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.builder;
  * @author yuxuan.han
  * @date 2019/12/17 00:48
  **/
-public class PersonThinBuilder extends PersonBuilder {
+public class PersonThinBuilder extends BasePersonBuilder {
     
     @Override
     public void buildHead() {

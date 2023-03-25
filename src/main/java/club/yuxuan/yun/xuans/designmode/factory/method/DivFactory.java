@@ -1,7 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.factory.method;
 
-import club.yuxuan.yun.xuans.designmode.factory.simple.Operation;
-import club.yuxuan.yun.xuans.designmode.factory.simple.OperationAdd;
+import club.yuxuan.yun.xuans.designmode.factory.simple.BaseOperation;
 import club.yuxuan.yun.xuans.designmode.factory.simple.OperationDiv;
 
 /**
@@ -13,7 +12,7 @@ import club.yuxuan.yun.xuans.designmode.factory.simple.OperationDiv;
 public class DivFactory implements IFactory {
     
     @Override
-    public Operation createOperation() {
+    public BaseOperation createOperation() {
         return new OperationDiv();
     }
     

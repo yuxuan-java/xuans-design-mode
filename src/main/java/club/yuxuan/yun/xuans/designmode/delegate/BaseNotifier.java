@@ -5,7 +5,7 @@ import lombok.Getter;
 import java.lang.reflect.InvocationTargetException;
 
 @Getter
-abstract class Notifier {
+abstract class BaseNotifier {
     
     private DelegateEventHandler delegateEventHandler = new DelegateEventHandler();
 

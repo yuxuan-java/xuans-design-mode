@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.visitor.double_dispatch;
  * @author yuxuan.han
  * @date 2020/1/1 23:46
  **/
-public abstract class Action {
+public abstract class BaseAction {
     
     public abstract void getConclusion(Man man);
     

@@ -33,8 +33,8 @@ public class MediatorMain {
     public static void main(String[] args) {
         ConcreteMediator mediator = new ConcreteMediator();
         
-        Colleague colleague1 = new ConcreteColleague1(mediator);
-        Colleague colleague2 = new ConcreteColleague2(mediator);
+        BaseColleague colleague1 = new ConcreteColleague1(mediator);
+        BaseColleague colleague2 = new ConcreteColleague2(mediator);
         
         mediator.setColleague1(colleague1);
         mediator.setColleague2(colleague2);

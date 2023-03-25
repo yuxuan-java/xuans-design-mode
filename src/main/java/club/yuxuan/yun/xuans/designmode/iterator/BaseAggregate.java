@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.iterator;
  * @author yuxuan.han
  * @date 2019/12/24 21:49
  **/
-public abstract class Aggregate<T> {
+public abstract class BaseAggregate<T> {
 
     /**
      * 创建迭代器
@@ -16,7 +16,7 @@ public abstract class Aggregate<T> {
      * @param 
      * @return club.yuxuan.yun.xuans.designmode.iterator.Iterator
      */
-    public abstract Iterator<T> createIterator();
+    public abstract BaseIterator<T> createIterator();
     
     public abstract T get(int index);
     

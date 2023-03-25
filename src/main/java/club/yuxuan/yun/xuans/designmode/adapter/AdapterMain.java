@@ -18,7 +18,7 @@ package club.yuxuan.yun.xuans.designmode.adapter;
 public class AdapterMain {
 
     public static void main(String[] args) {
-        Target target = new Adapter();
+        BaseTarget target = new Adapter();
         target.request();
 
         System.out.println("------done------");

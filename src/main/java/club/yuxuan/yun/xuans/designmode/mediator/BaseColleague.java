@@ -6,11 +6,11 @@ package club.yuxuan.yun.xuans.designmode.mediator;
  * @author yuxuan.han
  * @date 2019/12/27 22:07
  **/
-public abstract class Colleague {
+public abstract class BaseColleague {
     
-    protected Mediator mediator;
+    protected BaseMediator mediator;
 
-    public Colleague(Mediator mediator) {
+    public BaseColleague(BaseMediator mediator) {
         this.mediator = mediator;
     }
     

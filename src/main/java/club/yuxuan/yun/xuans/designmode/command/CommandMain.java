@@ -25,8 +25,8 @@ public class CommandMain {
 
     public static void main(String[] args) {
         Receiver receiver = new Receiver();
-        Command command1 = new ConcreteCommand(receiver);
-        Command command2 = new OtherCommand(receiver);
+        BaseCommand command1 = new ConcreteCommand(receiver);
+        BaseCommand command2 = new OtherCommand(receiver);
         
         Invoker invoker = new Invoker();
         invoker.setCommand(command1);

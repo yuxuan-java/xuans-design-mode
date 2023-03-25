@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.adapter;
  * @author yuxuan.han
  * @date 2020/11/25 上午11:02
  **/
-public abstract class Target {
+public abstract class BaseTarget {
 
     /**
      * 普通请求

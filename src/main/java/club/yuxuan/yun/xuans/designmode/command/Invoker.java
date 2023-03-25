@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Invoker {
 
-    private List<Command> commands = new ArrayList<>();
+    private List<BaseCommand> commands = new ArrayList<>();
 
-    public void setCommand(Command command) {
+    public void setCommand(BaseCommand command) {
         commands.add(command);
     }
 
     public void executeCommand() {
-        for (Command command : commands) {
+        for (BaseCommand command : commands) {
             command.execute();
         }
     }

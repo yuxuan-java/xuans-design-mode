@@ -3,12 +3,12 @@ package club.yuxuan.yun.xuans.designmode.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcreteAggregate<T> extends Aggregate<T> {
+public class ConcreteAggregate<T> extends BaseAggregate<T> {
     
     private List<T> items = new ArrayList<>(16);
     
     @Override
-    public Iterator createIterator() {
+    public BaseIterator createIterator() {
         return new ConcreteIterator(this);
     }
 

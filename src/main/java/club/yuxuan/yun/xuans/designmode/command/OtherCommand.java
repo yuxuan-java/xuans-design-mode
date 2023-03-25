@@ -1,6 +1,9 @@
 package club.yuxuan.yun.xuans.designmode.command;
 
-public class OtherCommand extends Command {
+/**
+ * 其他命令
+ */
+public class OtherCommand extends BaseCommand {
     
     public OtherCommand(Receiver receiver) {
         super(receiver);

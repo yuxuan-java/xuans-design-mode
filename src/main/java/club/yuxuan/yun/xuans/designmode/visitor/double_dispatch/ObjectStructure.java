@@ -11,13 +11,13 @@ import java.util.List;
  **/
 public class ObjectStructure {
     
-    private List<Person> personList = new ArrayList<>();
+    private List<BasePerson> personList = new ArrayList<>();
 
     /**
      * 增加
      * @param element
      */
-    public void attach(Person element) {
+    public void attach(BasePerson element) {
         personList.add(element);
     }
 
@@ -25,7 +25,7 @@ public class ObjectStructure {
      * 移除
      * @param element
      */
-    public void detach(Person element) {
+    public void detach(BasePerson element) {
         personList.remove(element);
     }
 
@@ -33,8 +33,8 @@ public class ObjectStructure {
      * 查看显示
      * @param action
      */
-    public void display(Action action) {
-        for (Person person : personList) {
+    public void display(BaseAction action) {
+        for (BasePerson person : personList) {
             person.accept(action);
         }
     }

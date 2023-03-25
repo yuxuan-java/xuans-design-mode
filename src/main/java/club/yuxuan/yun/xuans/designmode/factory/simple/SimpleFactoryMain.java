@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 public class SimpleFactoryMain {
 
     public static void main(String[] args) {
-        Operation operation = OperationFactory.createOperate("+");
+        BaseOperation operation = OperationFactory.createOperate("+");
         operation.setNumberA(new BigDecimal("1"));
         operation.setNumberB(new BigDecimal("2"));
         System.out.println(operation.getResult());

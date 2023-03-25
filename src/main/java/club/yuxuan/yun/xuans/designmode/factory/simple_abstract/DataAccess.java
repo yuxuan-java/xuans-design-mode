@@ -15,17 +15,19 @@ import club.yuxuan.yun.xuans.designmode.factory.abstract_.user.OracleUser;
  **/
 public class DataAccess {
     
-    private static final String db = "MySQL";
+    private static final String DB = "MySQL";
 //    private static final String db = "Oracle";
     
     public static IUser createUser() {
         IUser result = null;
-        switch (db) {
+        switch (DB) {
             case "MySQL":
                 result = new MySqlUser();
                 break;
             case "Oracle":
                 result = new OracleUser();
+                break;
+            default:
                 break;
         }
         return result;
@@ -33,13 +35,15 @@ public class DataAccess {
     
     public static IDepartment createDepartment() {
         IDepartment result = null;
-        switch (db) {
-                case "MySQL":
-                    result = new MySqlDepartment();
-                    break;
-                case "Oracle":
-                    result = new OracleDepartment();
-                    break;
+        switch (DB) {
+            case "MySQL":
+                result = new MySqlDepartment();
+                break;
+            case "Oracle":
+                result = new OracleDepartment();
+                break;
+            default:
+                break;
         }
         return result;
     }

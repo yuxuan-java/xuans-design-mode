@@ -1,6 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.factory.method;
 
-import club.yuxuan.yun.xuans.designmode.factory.simple.Operation;
+import club.yuxuan.yun.xuans.designmode.factory.simple.BaseOperation;
 
 import java.math.BigDecimal;
 
@@ -19,7 +19,7 @@ public class MethodFactoryMain {
 
     public static void main(String[] args) {
         IFactory operationFactory = new AddFactory();
-        Operation operation = operationFactory.createOperation();
+        BaseOperation operation = operationFactory.createOperation();
         operation.setNumberA(new BigDecimal("1"));
         operation.setNumberB(new BigDecimal("2"));
         System.out.println(operation.getResult());

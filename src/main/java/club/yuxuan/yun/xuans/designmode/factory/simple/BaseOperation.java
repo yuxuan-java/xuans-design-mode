@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  * @date 2019/12/16 22:24
  **/
 @Data
-public abstract class Operation {
+public abstract class BaseOperation {
     
     protected BigDecimal numberA = BigDecimal.ZERO;
 

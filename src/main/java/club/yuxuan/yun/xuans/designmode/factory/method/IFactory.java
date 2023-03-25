@@ -1,6 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.factory.method;
 
-import club.yuxuan.yun.xuans.designmode.factory.simple.Operation;
+import club.yuxuan.yun.xuans.designmode.factory.simple.BaseOperation;
 
 /**
  * 工厂接口
@@ -10,6 +10,6 @@ import club.yuxuan.yun.xuans.designmode.factory.simple.Operation;
  **/
 public interface IFactory {
     
-    Operation createOperation();
+    BaseOperation createOperation();
     
 }

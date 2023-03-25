@@ -6,9 +6,9 @@ package club.yuxuan.yun.xuans.designmode.mediator;
  * @author yuxuan.han
  * @date 2019/12/27 22:10
  **/
-public class ConcreteColleague1 extends Colleague {
+public class ConcreteColleague1 extends BaseColleague {
     
-    public ConcreteColleague1(Mediator mediator) {
+    public ConcreteColleague1(BaseMediator mediator) {
         super(mediator);
     }
     

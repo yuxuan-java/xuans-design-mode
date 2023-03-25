@@ -5,9 +5,9 @@ import java.util.UUID;
 
 public class FlyweightFactory {
     
-    private static volatile Hashtable<String, Flyweight> flyweights = new Hashtable<>(4);
+    private static volatile Hashtable<String, BaseFlyweight> flyweights = new Hashtable<>(4);
     
-    public Flyweight getFlyweight(String key) {
+    public BaseFlyweight getFlyweight(String key) {
         if (!flyweights.containsKey(key)) {
             synchronized (FlyweightFactory.class) {
                 if (!flyweights.contains(key)) {

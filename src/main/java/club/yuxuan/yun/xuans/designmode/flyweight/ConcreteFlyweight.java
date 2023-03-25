@@ -9,7 +9,7 @@ import lombok.Getter;
  * @date 2019/12/27 22:50
  **/
 @Getter
-public class ConcreteFlyweight extends Flyweight {
+public class ConcreteFlyweight extends BaseFlyweight {
     
     private String name = "";
 

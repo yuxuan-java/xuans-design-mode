@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.visitor.double_dispatch;
  * @author yuxuan.han
  * @date 2020/1/2 00:06
  **/
-public class Marriage extends Action {
+public class Marriage extends BaseAction {
     
     @Override
     public void getConclusion(Man man) {

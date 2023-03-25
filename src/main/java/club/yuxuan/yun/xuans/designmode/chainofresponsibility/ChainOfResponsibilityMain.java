@@ -20,9 +20,9 @@ package club.yuxuan.yun.xuans.designmode.chainofresponsibility;
 public class ChainOfResponsibilityMain {
 
     public static void main(String[] args) {
-        Handler h1 = new ConcreteHandlerA();
-        Handler h2 = new ConcreteHandlerB();
-        Handler h3 = new ConcreteHandlerC();
+        BaseHandler h1 = new ConcreteHandlerA();
+        BaseHandler h2 = new ConcreteHandlerB();
+        BaseHandler h3 = new ConcreteHandlerC();
         h1.setSuccessor(h2);
         h2.setSuccessor(h3);
         

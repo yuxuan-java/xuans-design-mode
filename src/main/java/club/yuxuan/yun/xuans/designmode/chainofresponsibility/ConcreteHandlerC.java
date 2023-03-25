@@ -1,6 +1,6 @@
 package club.yuxuan.yun.xuans.designmode.chainofresponsibility;
 
-public class ConcreteHandlerC extends Handler {
+public class ConcreteHandlerC extends BaseHandler {
     
     @Override
     public void handlerRequest(int request) {

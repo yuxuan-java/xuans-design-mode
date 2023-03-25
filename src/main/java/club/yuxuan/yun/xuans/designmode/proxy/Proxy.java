@@ -7,7 +7,7 @@ package club.yuxuan.yun.xuans.designmode.proxy;
  * @author yuxuan.han
  * @date 2019/12/16 23:25
  **/
-public class Proxy extends Subject {
+public class Proxy extends BaseSubject {
     
     RealSubject realSubject;
     

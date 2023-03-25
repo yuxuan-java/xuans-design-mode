@@ -1,10 +1,10 @@
 package club.yuxuan.yun.xuans.designmode.chainofresponsibility;
 
-public abstract class Handler {
+public abstract class BaseHandler {
     
-    protected Handler successor;
+    protected BaseHandler successor;
 
-    public void setSuccessor(Handler successor) {
+    public void setSuccessor(BaseHandler successor) {
         this.successor = successor;
     }
     

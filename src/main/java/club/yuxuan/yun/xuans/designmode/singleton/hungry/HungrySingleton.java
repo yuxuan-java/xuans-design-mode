@@ -8,13 +8,13 @@ package club.yuxuan.yun.xuans.designmode.singleton.hungry;
  **/
 public class HungrySingleton {
     
-    private static final HungrySingleton instance = new HungrySingleton();
+    private static final HungrySingleton INSTANCE = new HungrySingleton();
     
     private HungrySingleton(){
     }
     
     public static HungrySingleton getInstance() {
-        return instance;
+        return INSTANCE;
     }
     
 }

@@ -38,20 +38,20 @@ public class FlyweightMain {
         
         FlyweightFactory factory = new FlyweightFactory();
 
-        Flyweight flyweight1 = factory.getFlyweight(extrinsicState + "A");
+        BaseFlyweight flyweight1 = factory.getFlyweight(extrinsicState + "A");
         flyweight1.operation("AAA");
 
-        Flyweight flyweight2 = factory.getFlyweight(extrinsicState + "B");
+        BaseFlyweight flyweight2 = factory.getFlyweight(extrinsicState + "B");
         flyweight2.operation("BBB");
 
-        Flyweight flyweight3 = factory.getFlyweight(extrinsicState + "C");
+        BaseFlyweight flyweight3 = factory.getFlyweight(extrinsicState + "C");
         flyweight3.operation("CCC");
 
-        Flyweight flyweight4 = factory.getFlyweight(extrinsicState + "A");
+        BaseFlyweight flyweight4 = factory.getFlyweight(extrinsicState + "A");
         flyweight4.operation("DDD");
         
         for (int i = 0; i < 20; i++) {
-            Flyweight flyweight = factory.getFlyweight(i + "");
+            BaseFlyweight flyweight = factory.getFlyweight(i + "");
             flyweight.operation(extrinsicState + i);
         }
 

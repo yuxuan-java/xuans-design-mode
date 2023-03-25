@@ -26,22 +26,22 @@ public class DoubleDispatchMain {
         System.out.println();
         
         //  成功时的反应
-        Action a1 = new Success();
+        BaseAction a1 = new Success();
         structure.display(a1);
         System.out.println();
         
         //  失败时的反应
-        Action a2 = new Failing();
+        BaseAction a2 = new Failing();
         structure.display(a2);
         System.out.println();
         
         //  恋爱时的反应
-        Action a3 = new Amativeness();
+        BaseAction a3 = new Amativeness();
         structure.display(a3);
         System.out.println();
         
         //  结婚时的反应
-        Action a4 = new Marriage();
+        BaseAction a4 = new Marriage();
         structure.display(a4);
         System.out.println();
         

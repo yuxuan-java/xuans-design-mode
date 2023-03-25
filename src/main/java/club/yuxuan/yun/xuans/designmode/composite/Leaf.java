@@ -6,19 +6,19 @@ package club.yuxuan.yun.xuans.designmode.composite;
  * @author yuxuan.han
  * @date 2019/12/23 22:22
  **/
-public class Leaf extends Component {
+public class Leaf extends BaseComponent {
 
     public Leaf(String name) {
         super(name);
     }
 
     @Override
-    public void add(Component component) {
+    public void add(BaseComponent component) {
         System.out.println("Can not add to a leaf.");
     }
 
     @Override
-    public void remove(Component component) {
+    public void remove(BaseComponent component) {
         System.out.println("Can not remove from a leaf.");
     }
 

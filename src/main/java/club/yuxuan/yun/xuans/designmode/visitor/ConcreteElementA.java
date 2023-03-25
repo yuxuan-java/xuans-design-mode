@@ -1,9 +1,9 @@
 package club.yuxuan.yun.xuans.designmode.visitor;
 
-public class ConcreteElementA extends Element {
+public class ConcreteElementA extends BaseElement {
     
     @Override
-    public void accept(Visitor visitor) {
+    public void accept(BaseVisitor visitor) {
         visitor.visitConcreteElementA(this);
     }
     

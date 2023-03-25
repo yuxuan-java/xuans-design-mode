@@ -2,7 +2,7 @@ package club.yuxuan.yun.xuans.designmode.delegate;
 
 import java.lang.reflect.InvocationTargetException;
 
-class GoodNotifier extends Notifier {
+class GoodNotifier extends BaseNotifier {
     
     @Override
     public void addListener(Object object, String methodName, Object... args) {

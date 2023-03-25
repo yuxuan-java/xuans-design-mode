@@ -6,7 +6,7 @@ package club.yuxuan.yun.xuans.designmode.flyweight;
  * @author yuxuan.han
  * @date 2019/12/27 22:47
  **/
-public abstract class Flyweight {
+public abstract class BaseFlyweight {
     
     public abstract void operation(String extrinsicState);
     

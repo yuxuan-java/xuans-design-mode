@@ -9,13 +9,13 @@ import lombok.Setter;
  * @date 2019/12/27 22:08
  **/
 @Setter
-public class ConcreteMediator extends Mediator {
+public class ConcreteMediator extends BaseMediator {
     
-    private Colleague colleague1;
-    private Colleague colleague2;
+    private BaseColleague colleague1;
+    private BaseColleague colleague2;
     
     @Override
-    public void send(String message, Colleague colleague) {
+    public void send(String message, BaseColleague colleague) {
         if (colleague == colleague1) {
             colleague2.notify(message);
         } else {
