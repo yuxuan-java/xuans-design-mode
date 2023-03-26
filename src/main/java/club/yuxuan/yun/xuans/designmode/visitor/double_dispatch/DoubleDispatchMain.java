@@ -2,7 +2,7 @@ package club.yuxuan.yun.xuans.designmode.visitor.double_dispatch;
 
 /**
  * 访问者模式-双分派技术
- *      首先在客户端程序中将具体状态作为参数传递给'Man'类完成了一次分派，
+ *      首先在客户端程序中将具体动作作为参数传递给'Man'类完成了一次分派，
  *      然后'Man'类调用作为参数的'Action'中的方法'getConclusion'，
  *      同时将自己(Person)作为参数传递进去，完成了第二次分派。
  *      
@@ -12,7 +12,7 @@ package club.yuxuan.yun.xuans.designmode.visitor.double_dispatch;
  *      
  *      由于使用了双分派技术，需要增加'结婚'的动作来考察'男人'和'女人'的反应时
  *      只需要增加一个Action子类，就可以在客户端调用来查看，不需要改变其它任何类的代码。
- *      完美的体现了开放-封闭原则。
+ *      完美的体现了开放-封闭原则[CLP]。
  *
  * @author yuxuan.han
  * @date 2020/1/1 23:40
@@ -20,6 +20,7 @@ package club.yuxuan.yun.xuans.designmode.visitor.double_dispatch;
 public class DoubleDispatchMain {
 
     public static void main(String[] args) {
+        //  客户端程序
         ObjectStructure structure = new ObjectStructure();
         structure.attach(new Man());
         structure.attach(new Woman());
@@ -43,7 +44,6 @@ public class DoubleDispatchMain {
         //  结婚时的反应
         BaseAction a4 = new Marriage();
         structure.display(a4);
-        System.out.println();
         
         System.out.println("------done------");
     }
